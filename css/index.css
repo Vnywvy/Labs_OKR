@@ -1,0 +1,127 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  background-color: #f0f0f0;
+}
+
+.container {
+  margin: 0 100px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#projects {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#projects td {
+  border: 1px solid black;
+}
+
+#projects .projectsTitle {
+  text-align: center;
+  padding: 10px;
+  background-color: gray;
+  color: #f0f0f0;
+}
+
+#projects .characteristics {
+  text-align: center;
+  padding: 10px;
+}
+
+#project .projectsName {
+  padding: 10px;
+  text-align: left;
+}
+
+.someparagraph2313 {
+  color: rgb(110, 110, 110) !important;
+}
+
+.styled-ul {
+  padding: 0;
+}
+
+.styled-ul li {
+  margin: 0 0 0 20px;
+  padding: 5px 0;
+}
+
+.styled-ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.styled-ul li a:hover {
+  text-decoration: underline;
+}
+
+.styled-ol {
+  list-style-type: decimal;
+  padding: 0;
+}
+
+.styled-ol li {
+  margin: 0 0 0 20px;
+  padding: 5px 0;
+  color: black;
+}
+
+.styled-ol li a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.styled-ol li:hover {
+  text-decoration: underline;
+}
+
+.styled-ol li a:hover {
+  text-decoration: underline;
+}
+
+.styled-dl {
+  margin: 0;
+  padding: 0;
+}
+
+.styled-dl dt {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.styled-dl dd {
+  margin-bottom: 10px;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}

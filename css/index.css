@@ -8,10 +8,12 @@ h6 {
   font-size: 24px;
   font-weight: bold;
   line-height: 1.5;
-  text-align: center;
+  text-align: left;
 }
 
 body {
+  padding: 0;
+  margin: 0;
   font-family: Arial, sans-serif;
   font-size: 16px;
   line-height: 1.6;
@@ -23,12 +25,12 @@ body {
   margin: 0 100px;
 }
 
-a {
+.container a {
   color: #007bff;
   text-decoration: none;
 }
 
-a:hover {
+.container a:hover {
   text-decoration: underline;
 }
 
@@ -53,7 +55,7 @@ a:hover {
   padding: 10px;
 }
 
-#project .projectsName {
+#projects .projectsName {
   padding: 10px;
   text-align: left;
 }
@@ -89,6 +91,14 @@ a:hover {
   margin: 0 0 0 20px;
   padding: 5px 0;
   color: black;
+}
+
+.styled-ol li::before {
+  content: "\20aa";
+}
+
+.styled-ol li::after {
+  content: "\10";
 }
 
 .styled-ol li a {
@@ -132,4 +142,81 @@ strong {
 
 .contactInfo > li {
   font-style: italic;
+}
+
+.header-container {
+  align-items: center;
+  margin: 0 100px;
+  position: relative;
+  height: 40px;
+}
+
+.header-left {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header-left a:link {
+  font-size: 36px;
+  color: black;
+  transition: all;
+  transition-duration: 300ms;
+}
+
+.header-left a:hover {
+  text-decoration: none;
+  color: gray;
+}
+
+.header-left a:active {
+  color: blue;
+}
+
+.header-links {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-100%);
+  list-style-type: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-links a {
+  color: gray;
+  transition: all;
+  transition-duration: 300ms;
+}
+
+.header-links a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.header-links a:visited {
+  color: purple;
+}
+
+.header-links li:first-child a {
+  font-size: 20px;
+}
+
+.float-right {
+  float: right;
+}
+
+.fixed {
+  position: fixed;
+  background-color: #acacac;
+  color: rgb(61, 58, 58);
+  height: 100px;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

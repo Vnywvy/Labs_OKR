@@ -125,3 +125,11 @@ em {
 strong {
   font-weight: bold;
 }
+
+.highlighted + li {
+  color: blue;
+}
+
+.contactInfo > li {
+  font-style: italic;
+}

@@ -22,13 +22,34 @@
         <li>
           <p>Адреса: <em>вул. Будівельників, 10, м. Київ, Україна</em></p>
         </li>
+        <li>
+          <button id="getHired">
+            Отримати інформацію про працевлаштування
+          </button>
+        </li>
+        <li>
+          <button id="registration">Зареєструватися</button>
+        </li>
+        <li>
+          <button id="infoButton">Інформація про розробника</button>
+        </li>
       </ul>
 
-      <p>
+      <p class="water">
         Ми знаходимося поруч і готові допомогти вам з будь-якими будівельними
         потребами!
       </p>
-
+      <p class="water">
+        Незалежно від того, чи вам потрібна нова кухня, ванна кімната, прибудова
+        або ремонт всього будинку, наша команда експертів готова взяти на себе
+        всі ваші будівельні потреби.
+      </p>
+      <p class="water">
+        Ми використовуємо лише найякісніші матеріали та найсучасніші методи
+        будівництва, щоб гарантувати, що ваш проект буде завершений вчасно, в
+        рамках бюджету та з максимальною якістю.
+      </p>
+      <p id="water-p"></p>
       <p>
         <strong>Детальніша інформація про роботу ProfiBud:</strong>
       </p>
@@ -47,5 +68,24 @@
         </li>
       </ul>
     </div>
+    <script>
+      const registration = () => {
+        const reply = confirm("Бажаєте зареєструватися?");
+        if (reply) {
+          const name = prompt("Вкажіть ім'я");
+          if (name) {
+            alert(`Дяккую за реєстрацію, ${name}`);
+          } else {
+            alert("Бувайте");
+          }
+        } else {
+          alert("Бувайте");
+        }
+      };
+      document
+        .getElementById("registration")
+        .addEventListener("click", registration);
+    </script>
+    <script src="../js/scriptContacts.js"></script>
   </body>
 </html>
